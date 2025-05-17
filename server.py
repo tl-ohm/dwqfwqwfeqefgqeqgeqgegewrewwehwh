@@ -6,8 +6,7 @@ app = Flask(__name__, template_folder="client/templates", static_folder="client/
 @app.route('/')
 def LandingPage():
 
-    return 404
-
+    return 'hi'
 @app.errorhandler(Exception)
 def handle_all_errors(e):
     return redirect(url_for('LandingPage'))
